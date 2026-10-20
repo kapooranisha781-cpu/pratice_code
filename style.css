@@ -1,0 +1,226 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:#0f172a;
+  color:white;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+/* Navbar */
+
+header{
+  position:sticky;
+  top:0;
+  background:#0f172a;
+  z-index:100;
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 10%;
+}
+
+nav ul{
+  display:flex;
+  gap:25px;
+  list-style:none;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+}
+
+nav a:hover{
+  color:#38bdf8;
+}
+
+/* Hero */
+
+.hero{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:20px;
+  background:linear-gradient(
+      rgba(15,23,42,.8),
+      rgba(15,23,42,.8)
+    ),
+    url("https://images.unsplash.com/photo-1511578314322-379afb476865?w=1600");
+  background-size:cover;
+  background-position:center;
+}
+
+.hero-content{
+  max-width:700px;
+}
+
+.hero h1{
+  font-size:4rem;
+  margin-bottom:20px;
+}
+
+.hero p{
+  font-size:1.2rem;
+  margin-bottom:30px;
+}
+
+.btn{
+  display:inline-block;
+  padding:14px 30px;
+  background:#38bdf8;
+  color:white;
+  text-decoration:none;
+  border-radius:40px;
+}
+
+/* Sections */
+
+.section{
+  padding:80px 10%;
+  text-align:center;
+}
+
+.section h2{
+  margin-bottom:30px;
+  color:#38bdf8;
+  font-size:2.5rem;
+}
+
+/* Event Info */
+
+.event-info{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+  padding:50px 10%;
+}
+
+.info-card{
+  background:#1e293b;
+  padding:30px;
+  border-radius:15px;
+  text-align:center;
+}
+
+/* Speakers */
+
+.speakers-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.speaker-card{
+  background:#1e293b;
+  padding:20px;
+  border-radius:15px;
+}
+
+.speaker-card img{
+  width:100%;
+  border-radius:10px;
+}
+
+.speaker-card h3{
+  margin-top:15px;
+}
+
+/* Schedule */
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:20px;
+}
+
+table th,
+table td{
+  border:1px solid #334155;
+  padding:15px;
+}
+
+table th{
+  background:#38bdf8;
+}
+
+/* Tickets */
+
+.ticket-container{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+.ticket-card{
+  background:#1e293b;
+  padding:30px;
+  width:280px;
+  border-radius:15px;
+}
+
+.ticket-card h1{
+  margin:20px 0;
+}
+
+.ticket-card button{
+  padding:12px 25px;
+  border:none;
+  border-radius:30px;
+  cursor:pointer;
+  margin-top:15px;
+}
+
+.premium{
+  border:2px solid #38bdf8;
+}
+
+/* Contact */
+
+#contact p{
+  margin:10px 0;
+}
+
+/* Footer */
+
+footer{
+  text-align:center;
+  padding:25px;
+  background:#020617;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+  nav{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  .hero h1{
+    font-size:2.5rem;
+  }
+
+  .hero p{
+    font-size:1rem;
+  }
+}
